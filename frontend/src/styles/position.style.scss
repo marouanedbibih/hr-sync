@@ -1,0 +1,92 @@
+/* Positioning SCSS */
+
+/* Flexbox Positions */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Grid Positions */
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+/* Absolute & Relative Positions */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+/* Alignments */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .flex-column-mobile {
+    flex-direction: column;
+  }
+
+  .text-center-mobile {
+    text-align: center;
+  }
+}
+
+
+/* Height*/
+.full-height {
+  height: 100%;
+}
+
+.screen-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

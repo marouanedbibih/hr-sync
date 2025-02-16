@@ -1,0 +1,81 @@
+/* Animations SCSS */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade Out Animation */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.bounce {
+  animation: bounce 0.5s infinite;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .fade-in {
+    animation-duration: 0.3s;
+  }
+  .slide-in {
+    animation-duration: 0.3s;
+  }
+}
+
+
+@keyframes descendFromTop {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.descend-from-top {
+  animation: descendFromTop 0.3s ease-out;
+}

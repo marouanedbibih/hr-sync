@@ -1,0 +1,120 @@
+/* Typography SCSS */
+
+
+/* Typography Variables */
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Helvetica Neue', sans-serif;
+$base-font-size: 16px;
+$heading-color: var(--dark-teal);
+$text-color: var(--dark-teal);
+$muted-color: rgba(31, 58, 61, 0.6);
+
+/* Base Typography */
+body {
+  font-family: $font-primary;
+  font-size: $base-font-size;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+  font-weight: bold;
+  color: $heading-color;
+  margin: 8px;
+  line-height: 1.3;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Paragraphs */
+p {
+  font-size: $base-font-size;
+  margin: 8px 8px ;
+  color: $text-color;
+}
+
+/* Links */
+a {
+  color: var(--medium-teal);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--light-teal);
+  }
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--medium-teal);
+  padding-left: 16px;
+  font-style: italic;
+  color: $muted-color;
+  margin: 16px 0;
+}
+
+/* Code Blocks */
+code, pre {
+  font-family: 'Courier New', monospace;
+  background: var(--pale-teal);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+pre {
+  padding: 12px;
+  overflow-x: auto;
+}
+
+/* Small Text */
+small {
+  font-size: 0.875rem;
+  color: $muted-color;
+}
+
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+  h5 { font-size: 1rem; }
+  h6 { font-size: 0.875rem; }
+  body { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1rem; }
+  h5 { font-size: 0.875rem; }
+  h6 { font-size: 0.75rem; }
+  body { font-size: 12px; }
+}

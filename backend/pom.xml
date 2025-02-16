@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.marouanedbibih</groupId>
-	<artifactId>springsecurity</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>springsecurity</name>
+	<artifactId>hrsync</artifactId>
+	<version>0.0.1</version>
+	<name>hrsync</name>
 	<description>Demo project for Spring Boot</description>
 	<url />
 	<licenses>

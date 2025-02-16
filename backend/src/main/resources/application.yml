@@ -2,20 +2,18 @@ server:
   port: 8080
 
 spring:
-  # Application
   application:
-    name: spring-security-backend
-
-  # Datasource
+    name: hr-sync
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3307/spring-security?createDatabaseIfNotExist=true&useSSL=false&useSSL=false&allowPublicKeyRetrieval=true}
-    username: marouane
-    password: Marouane@2001
-
-  # JPA
+    url: jdbc:mysql://localhost:3306/hrsync_db?createDatabaseIfNotExist=true&useSSL=false&useSSL=false&allowPublicKeyRetrieval=true
+    username: user
+    password: password
   jpa:
     hibernate:
       ddl-auto: update
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
+
+cors:
+  allowed-origins: http://localhost:4200
